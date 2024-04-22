@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        .brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        nav {
+            float: right;
+        }
+
+        .nav-item {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .destaque {
+            margin-top: 30px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .col-4 {
+            flex: 0 0 32%;
+            max-width: 32%;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 0.25rem;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-title {
+            padding: 1rem;
+            background-color: #f0f0f0;
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        .card-body {
+            padding: 1rem;
+            background-color: #fff;
+        }
+
+        .card-body p {
+            color: #666;
+        }
+
+        .btn-success {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-success:hover {
+            background-color: #218838;
+        }
+
+        #footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        #footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="brand">Meu Ecommerce</a>
+            <nav>
+                <a href="#" class="nav-item">Inicio</a>
+                <a href="#" class="nav-item">Produtos</a>
+                <a href="#" class="nav-item">Sobre</a>
+                <a href="#" class="nav-item">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="destaque">
+                <h1>Destaque</h1>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="C:\Users\walha\Downloads\Codigo site Wagner av2\pistola_taurus_917_17_1_tiros_cal_9mm_1371_1_f44385c4094d90770057352dac963198.webp" alt="">
+                            <div class="card-title">PISTOLA TAURUS 917/ 17+1 TIROS - CAL . 9MM</div>
+                            <div class="card-body">
+                                <p>
+                                    Por:
+                                         R$ 7.404,71
+                                         ou 5x de R$ 1.480,94 Sem juros Cartão Hiper - Vindi
+                                </p>
+                                <div class="mt-3">
+                                    <a href="#" class="btn-success">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repita para os próximos produtos -->
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="C:\Users\walha\Downloads\Codigo site Wagner av2\pistola_taurus_pt_1911_officer_6_1_tiros_3_5_polegadas_cal_45_acp_1369_2_5455d2be0e4d4ad4c3e7511a2e464968.webp" alt="">
+                            <div class="card-title">PISTOLA TAURUS PT 1911 OFFICER 6+1 TIROS - 3,5 POLEGADAS - CAL .45 ACP</div>
+                            <div class="card-body">
+                                <p>
+                                    Por:
+                                    R$ 8.929,32
+                                    ou 5x de R$ 1.785,86 Sem juros Cartão Hiper - Vindi
+                                </p>
+                                <div class="mt-3">
+                                    <a href="#" class="btn-success">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="C:\Users\walha\Downloads\Codigo site Wagner av2\revolver_taurus_rt627_4_7_tiros_tracker_cal_357_mag_1373_1_c0778e0a87140d2a16962067f2c2ff02.webp" alt="">
+                            <div class="card-title">REVÓLVER TAURUS RT627 4" - 7 TIROS - TRACKER - CAL. 357 MAG</div>
+                            <div class="card-body">
+                                <p>
+                                    Por:
+                                    R$ 7.394,00
+                                    ou 5x de R$ 1.478,80 Sem juros Cartão Hiper - Vind                                </p>
+                                <div class="mt-3">
+                                    <a href="#" class="btn-success">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="C:\Users\walha\Downloads\Codigo site Wagner av2\pistola_taurus_pt_838_15_1_tiros_cal_380_1375_1_2697b9459ac3dc9277afc102ab1c8568.webp" alt="">
+                            <div class="card-title">PISTOLA TAURUS PT 838 C- 15+1 TIROS - CAL .380
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    Por:
+                                     R$ 9.239,00
+                                     ou 5x de R$ 1.847,80 Sem juros Cartão Hiper - Vindi
+                                </p>
+                                <div class="mt-3">
+                                    <a href="#" class="btn-success">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="C:\Users\walha\Downloads\Codigo site Wagner av2\pistola_taurus_pt_838_15_1_tiros_cal_380_1375_1_2697b9459ac3dc9277afc102ab1c8568.webp" alt="">
+                            <div class="card-title">PISTOLA TAURUS TX22 - 10+1 OU 16+1 TIROS - CAL . 22 LR</div>
+                            <div class="card-body">
+                                <p>
+                                    Por:
+                                    R$9.960,00
+                                     ou 5x de R$ 1.992,00 Sem juros Cartão Hiper - Vindi
+                                </p>
+                                <div class="mt-3">
+                                    <a href="#" class="btn-success">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="C:\Users\walha\Downloads\Codigo site Wagner av2\pistola_taurus_pt_1911_8_tiros_5_polegadas_cal_45_acp_1355_1_20201028175240.webp" alt="">
+                            <div class="card-title">PISTOLA TAURUS PT 1911/8 TIROS - 5 POLEGADAS - CAL .45 ACP</div>
+                            <div class="card-body">
+                                <p>
+                                    Por:
+                                    R$ 12.779,00
+                                    ou 5x de R$ 2.555,80 Sem juros Cartão Hiper - Vindi                                </p>
+                                <div class="mt-3">
+                                    <a href="#" class="btn-success">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <p>
+                Desenvolvido por Waldemar Lins para materia: Labaratorio de Progamação 3
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
