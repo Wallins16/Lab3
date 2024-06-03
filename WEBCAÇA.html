@@ -28,6 +28,7 @@
             background-color: #333;
             color: #fff;
             padding: 10px 0;
+            transition: background-color 0.3s;
         }
 
         .navbar.dark-mode {
@@ -59,6 +60,7 @@
             font-size: 2rem;
             margin-bottom: 20px;
             color: #333;
+            transition: color 0.3s;
         }
 
         .dark-mode h1 {
@@ -91,8 +93,8 @@
 
         .card img {
             width: 100%;
-            height: 200px;
-            object-fit: cover;
+            height: 200px; /* Altura fixa para as imagens */
+            object-fit: cover; /* Manter proporções */
         }
 
         .card-title {
@@ -101,6 +103,7 @@
             font-weight: bold;
             font-size: 1.1rem;
             color: #333;
+            transition: background-color 0.3s, color 0.3s;
         }
 
         .dark-mode .card-title {
@@ -111,6 +114,7 @@
         .card-body {
             padding: 1rem;
             background-color: #fff;
+            transition: background-color 0.3s, color 0.3s;
         }
 
         .dark-mode .card-body {
@@ -120,6 +124,7 @@
 
         .card-body p {
             color: #666;
+            transition: color 0.3s;
         }
 
         .dark-mode .card-body p {
@@ -154,6 +159,7 @@
             padding: 20px 0;
             text-align: center;
             margin-top: 30px;
+            transition: background-color 0.3s;
         }
 
         #footer p {
@@ -179,6 +185,7 @@
             padding: 10px;
             cursor: pointer;
             border-radius: 5px;
+            transition: background-color 0.3s;
         }
 
         .dark-mode .toggle-dark-mode {
@@ -258,8 +265,7 @@
                     <div class="col-4">
                         <div class="card">
                             <img src="C:\Users\walha\Downloads\Codigo site Wagner av2\pistola_taurus_pt_838_15_1_tiros_cal_380_1375_1_2697b9459ac3dc9277afc102ab1c8568.webp" alt="">
-                            <div class="card-title">PISTOLA TAURUS PT 838 C- 15+1 TIROS - CAL .380
-                            </div>
+                            <div class="card-title">PISTOLA TAURUS PT 838 C- 15+1 TIROS - CAL .380</div>
                             <div class="card-body">
                                 <p>
                                     Por:
@@ -272,38 +278,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
-                        <div class="card">
-                            <img src="C:\Users\walha\Downloads\Codigo site Wagner av2\pistola_taurus_pt_838_15_1_tiros_cal_380_1375_1_2697b9459ac3dc9277afc102ab1c8568.webp" alt="">
-                            <div class="card-title">PISTOLA TAURUS TX22 - 10+1 OU 16+1 TIROS - CAL . 22 LR</div>
-                            <div class="card-body">
-                                <p>
-                                    Por:
-                                    R$9.960,00
-                                    ou 5x de R$ 1.992,00 Sem juros Cartão Hiper - Vindi
-                                </p>
-                                <div class="mt-3">
-                                    <a href="#" class="btn-success">Comprar</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card">
-                            <img src="C:\Users\walha\Downloads\Codigo site Wagner av2\pistola_taurus_pt_1911_8_tiros_5_polegadas_cal_45_acp_1355_1_20201028175240.webp" alt="">
-                            <div class="card-title">PISTOLA TAURUS PT 1911/8 TIROS - 5 POLEGADAS - CAL .45 ACP</div>
-                            <div class="card-body">
-                                <p>
-                                    Por:
-                                    R$ 12.779,00
-                                    ou 5x de R$ 2.555,80 Sem juros Cartão Hiper - Vindi
-                                </p>
-                                <div class="mt-3">
-                                    <a href="#" class="btn-success">Comprar</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- Adicione mais produtos aqui conforme necessário -->
                 </div>
             </section>
         </div>
@@ -311,9 +286,7 @@
 
     <footer id="footer">
         <div class="container">
-            <p>
-                Desenvolvido por Waldemar Lins para materia: Labaratorio de Progamação 3
-            </p>
+            <p>&copy; 2024 Meu Ecommerce. Todos os direitos reservados.</p>
         </div>
     </footer>
 
@@ -321,16 +294,15 @@
         const toggleButton = document.querySelector('.toggle-dark-mode');
         const body = document.body;
         const navbar = document.querySelector('.navbar');
-        const cards = document.querySelectorAll('.card-title, .card-body');
-        const footer = document.getElementById('footer');
+        const footer = document.querySelector('#footer');
 
         toggleButton.addEventListener('click', () => {
             body.classList.toggle('dark-mode');
             navbar.classList.toggle('dark-mode');
             footer.classList.toggle('dark-mode');
-            cards.forEach(card => card.classList.toggle('dark-mode'));
             toggleButton.textContent = body.classList.contains('dark-mode') ? 'Modo Claro' : 'Modo Escuro';
         });
     </script>
 </body>
 </html>
+
